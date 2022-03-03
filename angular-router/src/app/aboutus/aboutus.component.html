@@ -1,0 +1,110 @@
+<!-- Body part -->
+
+<div class="container mt-5 mb-5">
+  <div class="row g-1">
+      <div class="col-md-4">
+          <div class="p-card">
+            <img [src]="imgurl1">
+              <div class="p-details">
+                  <div class="d-flex justify-content-between align-items-center mx-2">
+                      <h5>Foolka Puri</h5><span>Kaka Kathiyavadi</span>
+                  </div>
+                  <div class="mx-2">
+                      <hr class="line">
+                  </div>
+                  <div class="d-flex justify-content-between mt-2 spec mx-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <h6 class="mb-0">Price</h6><span>35 Rupees</span>
+                    </div>
+                  </div>
+                  <div class="buy mt-3"><button (click)="addtocart(1)" class="btn btn-primary btn-block" type="submit">Add to Cart</button></div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="p-card">
+            <img [src]="imgurl2">
+              <div class="p-details">
+                  <div class="d-flex justify-content-between align-items-center mx-2">
+                      <h5>Jalebi Ganthiya</h5><span>Shree Nathji Gandhinagar</span>
+                  </div>
+                  <div class="mx-2">
+                      <hr class="line">
+                  </div>
+                  <div class="d-flex justify-content-between mt-2 spec mx-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <h6 class="mb-0">Price</h6><span>250 Rupees/KG</span>
+                    </div>
+                  </div>
+                  <div class="buy mt-3"><button (click)="addtocart(2)" class="btn btn-primary btn-block" type="submit">Add to Cart</button></div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-card">
+            <img [src]="imgurl2">
+            <div class="p-details">
+                <div class="d-flex justify-content-between align-items-center mx-2">
+                    <h5>Fix Dish</h5><span>Pramukh Bhojanalaya</span>
+                </div>
+                <div class="mx-2">
+                    <hr class="line">
+                </div>
+                <div class="d-flex justify-content-between mt-2 spec mx-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <h6 class="mb-0">Price</h6><span>120</span>
+                    </div>
+                </div>
+                <div class="buy mt-3"><button (click)="addtocart(3)" class="btn btn-primary btn-block" type="submit">Add to cart</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-card">
+            <img [src]="imgurl2">
+            <div class="p-details">
+                <div class="d-flex justify-content-between align-items-center mx-2">
+                    <h5>Chana Rotla</h5><span>130</span>
+                </div>
+                <div class="mx-2">
+                    <hr class="line">
+                </div>
+                <div class="d-flex justify-content-between mt-2 spec mx-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <h6 class="mb-0">Price</h6><span>200</span>
+                    </div>
+                </div>
+                <div class="buy mt-3"><button (click)="addtocart(4)" class="btn btn-primary btn-block" type="submit">Add to Cart</button></div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5 mb-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="p-card">
+              <img [src]="">
+                <div class="p-details">
+                    <div class="d-flex justify-content-between align-items-center mx-2">
+                        <h5>{{name}}</h5><span>{{shop}}</span>
+                    </div>
+                    <div class="mx-2">
+                        <hr class="line">
+                    </div>
+                    <div class="d-flex justify-content-between mt-2 spec mx-2">
+                      <div class="d-flex flex-column align-items-center">
+                          <h6 class="mb-0">Price</h6><span>{{price}}</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
