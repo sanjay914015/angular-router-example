@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetJsonDataService } from '../get-json-data.service';
 
 @Component({
   selector: 'app-page-not-found',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor(public ht: GetJsonDataService) { }
 
   ngOnInit(): void {
+    this.ht.getdata().subscribe((data) => this.Show(data));
   }
 
+  htdata: any;
+  Show(data: any)
+  {
+    this.htdata = data;
+    console.log(this.htdata);
+  }
+
+  getjsondata()
+  {
+    console.log(this.htdata);
+  }
 }

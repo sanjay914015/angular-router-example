@@ -9,6 +9,10 @@ export class GetJsonDataService {
   constructor(private ht:HttpClient) { }
   getdata()
   {
-    return this.ht.get("  http://localhost:3000/food");
+    return this.ht.get("https://localhost:44361/api/todocustomers");
+  }
+  postdata(fooddata:any)
+  {
+    return this.ht.post("http://localhost:3000/food",fooddata);
   }
 }

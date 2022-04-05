@@ -34,11 +34,13 @@ show(data:any)
 }
 addtocart(id:any)
 {
-    console.log(this.htdata[id-1]);
-    this.name = this.htdata[id-1].Name;
-    this.shop= this.htdata[id-1].Shop;
-    this.price = this.htdata[id-1].Price;
-    this.url = this.htdata[id-1].URL;
+  console.log(this.htdata)
+    // console.log(this.htdata[id-1]);
+    // this.name = this.htdata[id-1].Name;
+    // this.shop= this.htdata[id-1].Shop;
+    // this.price = this.htdata[id-1].Price;
+    // this.url = this.htdata[id-1].URL;
+    // let file= {"id": this.name , "name": this.name};
 }
 
 
